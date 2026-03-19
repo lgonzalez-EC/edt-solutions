@@ -1,5 +1,66 @@
+* {
+}
+
+:root {
+  --primary-color: ;
+  --secondary-color: ;
+}
+
+/* Botones */
+/* From Uiverse.io by gharsh11032000 */
+.animated-button {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #ffffffd8;
+  box-shadow: 0 0 0 2px #b9b9b988;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button span:last-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #caaf6f;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button span:first-child {
+  position: relative;
+  z-index: 1;
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 5px #caaf6f;
+  color: #ffffff;
+}
+
+.animated-button:active {
+  scale: 0.95;
+}
+
+.animated-button:hover span:last-child {
+  width: 150px;
+  height: 150px;
+  opacity: 1;
+}
+
+/* Header */
 header {
-  background-color: #333;
+  background: url("../images/background_header.webp") no-repeat center;
   height: 35rem;
   color: #fff;
   text-align: center;
@@ -8,27 +69,110 @@ header {
 }
 
 .background-primary {
-background: #303030;
+  background: #303030;
 }
 
 /*//////////////////////
 /* Servicios Start */
 .card-service {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
   padding: 15px;
-  border-radius: 20px;
+  color: #fff;
+  border-radius: 50px;
+  transition: all 0.5s ease;
 }
 
 .card-service img {
-  width: 12rem;
+  width: 9rem;
   height: auto;
 }
 
 .card-service:hover {
-  background-color: rgb(216, 216, 216);
+  background-color: rgb(255, 255, 255);
+  color: #303030;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
   transition: all 0.3s ease;
 }
 /* Servicios End */
 /*//////////////////////
+
+/* Clientes Carousel */
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+}
+
+.carousel-wrapper::before,
+.carousel-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.carousel-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, #303030, transparent);
+}
+
+.carousel-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, #303030, transparent);
+}
+
+.carousel-track {
+  display: flex;
+  gap: 60px;
+  width: max-content;
+}
+
+.client-logo {
+  flex-shrink: 0;
+  width: 150px;
+  height: 100px;
+  background: rgba(241, 241, 241, 0.87);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.client-logo:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.client-logo img {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Form Inputs */
+.form-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px rgba(63, 63, 63, 0.5);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: #ffffff;
+}
+
+.form-input:focus {
+  box-shadow: inset 3px 6px 15px rgba(5, 5, 5, 0.6);
+}
