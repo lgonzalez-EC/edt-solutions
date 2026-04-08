@@ -11,22 +11,39 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
     <!-- style.css -->
     <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 
-<body>
+<body class="background-primary">
 
     <!-- Navbar Start -->
-    <nav>
+    <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="EDT navigation bar">
         <div class="container">
-            <a href="#" class="navbar-brand">EDT Solutions</a>
-            <ul class="nav justify-content-end">
-                <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Servicios</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
-            </ul>
+            <a class="navbar-brand" href="../."><img src="../assets/images/logo_sec.webp" width="100" alt="" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
+                aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-icon">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsFurni">
+                <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                    <li>
+                        <a class="nav-link" href="../.">Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./">Nosotros</a>
+                    </li>
+                    <li><a class="nav-link" href="../servicios/">Servicios</a></li>
+                    <li><a class="nav-link" href="../contacto/">Contacto</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- Navbar -->
@@ -40,8 +57,94 @@
     </header>
     <!-- Encabezado End -->
 
+    <!-- Nosotros Start -->
+    <section class="container-fluid background-primary">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 align-items-center py-5 py-lg-0 px-3 px-lg-5">
+                <h2 class="text-center text-white">
+                    Sobre nosotros
+                </h2>
+                <p class=" text-white">
+                    EDT Solutions es su aliado estratégico en la gestión
+                    integral de viajes y eventos corporativos. Optimizamos la
+                    planeación, coordinación y control garantizando
+                    continuidad operativa y una experiencia ejecutiva de alto
+                    nivel.
+                </p>
+                <p class="text-white">
+                    Con más de 9 años de experiencia, contamos con la
+                    infraestructura y red de proveedores para responder
+                    ágilmente a sus necesidades de movilidad.
+                </p>
+            </div>
+            <div class="col-lg-6 px-0">
+                <img width="100%" src="../assets/images/nosotros_3.webp" alt="" class="img-fluid img-about">
+            </div>
+        </div>
+    </section>
+    <!-- Nosotros End -->
+
+    <!-- filosofía Start -->
+    <section class="container-fluid py-5 ">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <h2 class="text-center text-white">Nuestra filosofía</h2>
+                <div class="col-lg-6 p-4">
+                    <h2 class="text-center text-white">Misión</h2>
+                    <p class="text-white">
+                        EDT Solutions es su aliado estratégico en la gestión
+                        integral de viajes y eventos corporativos. Optimizamos la
+                        planeación, coordinación y control garantizando
+                        continuidad operativa y una experiencia ejecutiva de alto
+                        nivel.
+                    </p>
+                </div>
+                <div class="col-lg-6 p-4">
+                    <h2 class="text-center text-white">Visión</h2>
+                    <p class="text-white">
+                        EDT Solutions es su aliado estratégico en la gestión
+                        integral de viajes y eventos corporativos. Optimizamos la
+                        planeación, coordinación y control garantizando
+                        continuidad operativa y una experiencia ejecutiva de alto
+                        nivel.
+                    </p>
+                </div>
+                <div class="col-lg-12">
+                    <h2 class="text-center text-white">Valores</h2>
+                    <div class="row justify-content-center align-items-center text-center">
+                        <div class="col-3">
+                            <img src="../assets/images/icon_1.svg" width="225" alt="">
+                            <p class="text-white">
+                                Valor 1
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <img src="../assets/images/icon_1.svg" width="225" alt="">
+                            <p class="text-white">
+                                Valor 2
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <img src="../assets/images/icon_1.svg" width="225" alt="">
+                            <p class="text-white">
+                                Valor 3
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <img src="../assets/images/icon_1.svg" width="225" alt="">
+                            <p class="text-white">
+                                Valor 4
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- filosofía End -->
+
     <!-- Banner Start -->
-    <section class="container-xxl py-5">
+    <section class="container-xxl py-5 background-secondary">
         <div class="text-center">
             <h2>¿Necesitas ayuda?</h2>
             <p>Contáctanos por WhatsApp para resolver tus dudas</p>
@@ -52,29 +155,34 @@
     </section>
     <!-- Banner End -->
 
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/524771257512" target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
     <!-- Footer Start -->
-    <footer class="bg-dark text-white py-4">
+    <footer id="site-footer" class="bg-dark text-white py-4">
         <div class="container-xxl">
             <div class="text-center mb-4">
-                <h1 class="fw-bold">EDT</h1>
+                <img src="../assets/images/logo_sec.webp" style="width: 10em;" alt="">
             </div>
             <hr>
             <div class="row">
-                <div class="col-md-4">
-                    <h5>Contactos</h5>
-                    <p>Email: contacto@edt.com</p>
-                    <p>Teléfono: +1 234 567 890</p>
+                <div class="col-md-4 text-center">
+                    <h5 class="py-2">Contactos</h5>
+                    <p><i class="fa-solid fa-envelope"></i> contacto@edt-solutions.com</p>
+                    <p><i class="fa-brands fa-whatsapp"></i> 477 125 7512</p>
                 </div>
-                <div class="col-md-4">
-                    <h5>Redes Sociales</h5>
-                    <p>Facebook</p>
-                    <p>Instagram</p>
-                    <p>LinkedIn</p>
+                <div class="col-md-4 text-center">
+                    <h5 class="py-2">Redes Sociales</h5>
+                    <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
                 </div>
-                <div class="col-md-4">
-                    <h5>Ubicación</h5>
-                    <p>Dirección ejemplo, Ciudad</p>
-                    <p>País</p>
+                <div class="col-md-4 text-center">
+                    <h5 class="py-2">Ubicación</h5>
+                    <p><i class="fa-solid fa-location-arrow"></i> Blvr. Miguel Hidalgo #2027. P.A. Local 29
+                        Col. Valle de León. León, Gto.</p>
                 </div>
             </div>
         </div>
@@ -86,6 +194,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <!-- js -->
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>
